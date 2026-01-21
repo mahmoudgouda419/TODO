@@ -12,6 +12,7 @@ h1 {
   line-height: 0.4;
   color: white;
   text-align: center;
+  text-shadow: #1b1b1b 2px 2px 17px;
 }
 .container {
   background-color: white;
@@ -20,6 +21,7 @@ h1 {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  box-shadow: #3d3d3d 6px 4px 17px;
 }
 .container h3 {
   font-family: "Zalando Sans", sans-serif;
@@ -41,6 +43,7 @@ h1 {
   padding: 17px;
   background-color: #edeef0;
   transition: 0.4s;
+  box-shadow: #bdbdbd 5px 2px 17px;
 }
 
 .container .addsec .inputxt:hover {
@@ -55,6 +58,7 @@ h1 {
   color: #edeef0;
   font-size: 20px;
   transition: 0.4s;
+  box-shadow: #bdbdbd 5px 2px 17px;
 }
 .container .addsec .add:hover {
   background-color: #4b4b4b;
@@ -66,6 +70,8 @@ h1 {
   background: #edeef0;
   font-size: 14px;
   cursor: pointer;
+  box-shadow: #bdbdbd 5px 2px 17px;
+  transition: 0.3s;
 }
 .high {
   border-left: 4px solid #e63946;
