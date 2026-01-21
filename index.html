@@ -25,11 +25,21 @@
     <div class="container">
       <h3>To-Do List</h3>
       <div class="addsec">
-        <input type="text" class="inputxt" />
+        <input
+          type="text"
+          class="inputxt"
+          placeholder="Start focusing on the task"
+        />
+        <select class="priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+
         <input type="button" value="ADD" class="add" />
       </div>
 
-      <div class="task">
+      <div class="task high">
         <div class="element">
           <input type="checkbox" id="task1" />
           <label for="task1">Programming</label>
@@ -37,5 +47,6 @@
         <i class="fa-regular fa-circle-xmark"></i>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
