@@ -1,0 +1,201 @@
+:root {
+  --main-color: #10cab7;
+  --p-color: #94a3b8;
+  --secondary-color-dark: #9ca3af;
+  --section-background-dark: #0f172a;
+  --section-background-dark2: #121a30;
+}
+
+body.dark {
+  background-color: var(--section-background-dark2);
+}
+
+.special-header.dark {
+  color: #202945;
+}
+.special-header.dark + p {
+  color: var(--p-color);
+}
+
+.header.dark {
+  background-color: #0f172a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.header.dark.shrink {
+  padding: 10px 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.header.dark .links .icon span {
+  background-color: #e0e0e0;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.header.dark .links ul {
+  background-color: #121b32;
+}
+
+.header.dark .links ul::before {
+  border-color: transparent transparent #121b32 transparent;
+}
+.header.dark .links ul li a {
+  color: var(--p-color);
+}
+.header.dark .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #0b1120;
+}
+
+.landing.dark {
+  background-image: url(../images/landing-dark.jpg);
+}
+
+.landing.dark .intro-text p {
+  color: white;
+}
+
+.features.dark {
+  background-color: var(--section-background-dark2);
+}
+
+.features.dark .feat {
+  background-color: #10192e;
+  box-shadow: 0 1px 8px 0px rgb(0 0 0 / 23%);
+}
+
+.features.dark .feat:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+.features.dark .container .feat h3 {
+  color: #f1f5f9;
+  margin: 30px 0;
+  font-weight: 800;
+}
+.features.dark .container .feat p {
+  line-height: 1.8;
+  color: var(--p-color);
+}
+
+.services.dark {
+  background-color: var(--section-background-dark);
+}
+
+.services.dark .timeline .content {
+  background: #10192e;
+}
+
+.services.dark .timeline .content p {
+  color: var(--p-color);
+}
+
+.portfolio.dark {
+  background-color: var(--section-background-dark2);
+}
+.portfolio.dark .portfolio-content .card {
+  background-color: var(--section-background-dark);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio.dark .portfolio-content .card .info {
+  background-color: var(--section-background-dark);
+}
+.portfolio.dark .portfolio-content .card .info h3 {
+  margin: 0 0 10px;
+  font-size: 19px;
+  color: #f1f5f9;
+}
+.portfolio.dark .portfolio-content .card .info p {
+  color: var(--p-color);
+}
+
+.about.dark {
+  background-color: var(--section-background-dark);
+}
+.about.dark .about-content .image::before {
+  background-color: #707070;
+}
+.about.dark .about-content .text p:first-of-type {
+  color: #f1f5f9;
+}
+.about.dark .about-content .text hr {
+  border-color: var(--main-color);
+}
+.about.dark .about-content .text p:last-of-type {
+  line-height: 1.8;
+  color: var(--p-color);
+}
+.about.dark .about-content .image::before {
+  background-color: #0e1320;
+}
+
+.contact.dark {
+  background-color: var(--section-background-dark2);
+}
+.contact.dark .info .label {
+  color: #f1f5f9;
+}
+.contact.dark .info .link {
+  color: var(--main-color);
+}
+.contact.dark .info .link:hover,
+.contact.dark .info .social i:hover {
+  color: #008b74;
+  cursor: pointer;
+  transition: var(--main-duration);
+}
+.contact.dark .info .social i {
+  color: var(--main-color);
+}
+.contact.dark .info .social {
+  color: var(--p-color);
+}
+.footer.dark {
+  background-color: #09202d;
+  color: white;
+}
+.footer.dark span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  border-radius: 40px;
+  background-color: var(--main-color);
+  transition: background 1s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  left: 4px;
+  top: 4px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: transform 0.6s ease, content 0.6s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+input:checked + .slider {
+  background-color: #13203d;
+}
+input:checked + .slider::before {
+  transform: translateX(40px);
+}
